@@ -7,4 +7,5 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
     }
+    // TODO consider for CDN URLs: https://dev.to/larswaechter/path-aliases-with-typescript-in-nodejs-4353
 }
