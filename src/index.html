@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=750, initial-scale=1">
+        <title>Nested Data Grid</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">  
+        
+        <style>
+            [un-cloak] {
+                display: none;
+            }
+        </style>
+
+        <script defer src="./asyncImports.raw.js"> </script>    
+    </head>
+
+    <body un-cloak>
+        
+        
+
+        <div un-cloak bg="purple-300" class="h-screen flex flex-col gap-10"> 
+            
+            <flex-row un-cloak classafter="gap-2 w-full justify-around mt-4">
+                <span class="block text-left grow max-w-1/4">
+                    flex-row example hybrids.js web-component
+                </span>
+                <span class="block text-right grow max-w-1/2">
+                    Custom dev setup <br>
+                    Designed for edge deployment of web-components
+                </span>
+            </flex-row>
+
+            <flex-row un-cloak classafter="gap-2 w-full px-2 my-2">
+                <span class="block text-center grow"  value="1">1</span>
+                <span class="block text-center grow"  value="2">2</span>
+                <span class="block text-center grow">3</span>
+            </flex-row>
+
+            <flex-row un-cloak classafter="gap-2 w-full px-2 items-center">
+                <span class="block text-center grow max-w-1/4 text-right"  value="1">nested →</span>
+                <flex-row un-cloak classafter="gap-2 grow w-1/2 p-2">
+                    <span class="block text-center grow"  value="1">1</span>
+                    <span class="block text-center grow"  value="2">2</span>
+                    <span class="block text-center grow">3</span>
+                </flex-row>
+                <span class="block text-center grow max-w-1/4 text-left">← nested</span>
+            </flex-row> 
+           
+        </div>
+    </body>
+</html>
