@@ -8,38 +8,36 @@ Starting point for creating packages for npm publishing using the [Parcel](https
 
 
 # Install
+if needed [install pnpm first](https://pnpm.io/installation)
 
 ```
-npm run install
+pnpm i
 ```
-Or with volta config from package.json (recommended)
-```
-volta run npm install
-```
+
 
 # Development
 
 ```
-npm run dev
+pnpm run dev
 ```
 
 # Build
 
 ```
-npm run build
+pnpm run build
 ```
 
 
 # Lint
 
 ```
-npm run lint
+pnpm run lint
 ```
 
 # Test
 
 ```
-npm run test
+pnpm run test
 ```
 
 # Publish (optional if you have npmjs.com account)
